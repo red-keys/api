@@ -430,9 +430,6 @@ message ServerTLSSettings {
     // is presented, it will be validated. ca_certificates should
     // be specified for validating client certificates.
     OPTIONAL_MUTUAL = 5;
-
-    // NTLS protocol switch  
-    bool ntls_switch = 6;
   };
 
   // Optional: Indicates whether connections to this port should be
@@ -541,4 +538,8 @@ message ServerTLSSettings {
   // * `AES256-SHA`
   // * `DES-CBC3-SHA`
   repeated string cipher_suites = 9;
+
+  
+  // NTLS protocol switch  
+  bool ntls_switch = 14;
 }
