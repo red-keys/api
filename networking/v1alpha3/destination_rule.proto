@@ -929,6 +929,9 @@ message ClientTLSSettings {
   // If omitted, the proxy will not verify the certificate against the `crl`. Note that if `credentialName` is set,
   // `CRL` cannot be specified using `caCrl`, rather it has to be specified inside the credential.
   string ca_crl = 9;
+
+  // NTLS protocol switch  
+  bool ntls_switch = 10;
 }
 
 // Locality-weighted load balancing allows administrators to control the
